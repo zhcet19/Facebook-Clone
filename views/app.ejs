@@ -1,0 +1,240 @@
+<%- include ('./partials/header') %>
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">My Profile</h4>
+         <p class="w3-center" ><img src="https://avatars1.githubusercontent.com/u/55043876?s=400&u=a430d95f0c0878e1a131d44fa4da378c11946c08&v=4" class="w3-circle" style="height:106px;width:106px" alt="Avatar" ></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i>Computer science undergrad</p>
+		<p><i class="fa fa-book fa-fw w3-margin-right w3-text-theme"></i>Studies at ZHCET,AMU</p>	
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i>Lives in Aligarh</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i>February 24 ,2001</p>
+		 
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
+          <div id="Demo1" class="w3-hide w3-container">
+           <li>Udemy Coupons</li>
+			  <li>AMU Alumni network</li>
+			  <li>Udacity Nanodegree Program</li>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+          <div id="Demo2" class="w3-hide w3-container">
+			  <li><span>Started Computer Engineering at ZHCET- 5 august,2019</span></li>
+		      <li>Moved to Aligarh at 3 august 2019</li> 
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+          <div id="Demo3" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+         <br>
+           <div class="w3-half">
+             <img src="https://img.collegepravesh.com/2016/01/ZHCET-Aligarh.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://avatars1.githubusercontent.com/u/55043876?s=400&u=a430d95f0c0878e1a131d44fa4da378c11946c08&v=4" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://images.static-collegedunia.com/public/college_data/images/campusimage/14130205885.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://i.ytimg.com/vi/k0vrcBz_KsY/maxresdefault.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://kids.kiddle.co/images/thumb/4/4a/ZHCET%27s_View_at_Night.JPG/600px-ZHCET%27s_View_at_Night.JPG" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://images.static-collegedunia.com/public/college_data/images/campusimage/141302058810.JPG" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-card w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>Interests</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">News</span>
+           
+            <span class="w3-tag w3-small w3-theme-d3">Labels</span>
+            <span class="w3-tag w3-small w3-theme-d2">Games</span>
+            <span class="w3-tag w3-small w3-theme-d1">Friends</span>
+            <span class="w3-tag w3-small w3-theme">Games</span>
+            <span class="w3-tag w3-small w3-theme-l1">Friends</span>
+            <span class="w3-tag w3-small w3-theme-l2">Food</span>
+            <span class="w3-tag w3-small w3-theme-l3">Design</span>
+            <span class="w3-tag w3-small w3-theme-l4">Art</span>
+            <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>People are looking at your profile. Find out who.</p>
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+		
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+             <form action="/images" method="POST" enctype="multipart/form-data"> 
+              <div> 
+				<label for="name"><b style="color:red">Post Heading</b></label> 
+				<input type="text" id="name" placeholder="Post here" value="" name="name" required style="margin-left:20px"> 
+			</div> 
+			<div> 
+				<label for="desc"><b style="color:red">Write something About</b></label> 
+				<br>
+				<textarea id="desc" name="desc" value="" rows="4" cols="90" placeholder="Write something here..." required> 
+					
+				</textarea> 
+				<br>
+			</div> 
+			<div> <span><label for="image"><b style="color:red">Add Image</b></label> 
+				<input type="file" id="image" name="image" value="" required> </span>
+				
+			</div>
+				 <div style="margin-left:300px">
+					  <button type="submit" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button> 
+				 </div>
+             
+				</form>
+            </div>
+          </div>
+        </div>
+      </div>
+		
+		
+		
+      <div>
+		  <% items.forEach(function(image) { %> 
+		   <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+			    <span class="w3-right w3-opacity"><%= image.created.toDateString() %></span>
+             <h4 style="color:red"><%= image.name %></h4><br>
+			     <hr class="w3-clear">
+			   <p style="color:green">
+				  <%= image.desc %> 
+			   </p>
+			   <div class="w3-row-padding" style="margin:0 -16px">
+				   <div class="w3-half">
+                  <img src="data:image/<%=image.img.contentType%>;base64, 
+                     <%=image.img.data.toString('base64')%>"   alt="Northern Lights" class="image">
+			   </div>
+			   </div>
+			  <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffaizy.run-us-west2.goorm.io%2F/images/<%=image._id %>&width=450&layout=button_count&action=like&size=large&share=true&height=46&appId" width="450" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+		  
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+			   <div>
+
+	        <a href="/images/<%=image._id %>" class="w3-button w3-theme-d2 w3-margin-bottom">
+
+	          Read More
+
+
+	        </a>
+
+	      </div>
+		</div>
+		 <% }) %>  
+		</div>
+	
+      
+		
+		
+      
+      
+
+      
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <img src="http://blog.abhibus.com/wp-content/uploads/2017/08/INDEPENDENCE-DAY-Celebrations-2017.jpg" alt="Independence day" style="width:100%;">
+          <p><strong>Independence day</strong></p>
+          <p>15 August ,2020</p>
+          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Friend Request</p>
+          <img src="https://f11.pmo.ee/O88Y1p8wKAvqpsJA3ssknUXWTuI=/650x650/smart/nginx/o/2017/11/16/7315861t1h4789.png" alt="Avatar" style="width:50%"><br>
+          <span>Jane Doe</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+        <p>ADS</p>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+
+
+
+
+
+<%- include ('./partials/footer') %>
