@@ -5,9 +5,13 @@ Fakebook is a clone of facebook depicting feauters including posting images,blog
 
 # TechStack
 
-Node,express and multer for server side development
-HTML,CSS,Bootstrap,JS for client side rendering
-NOSQL as database
+Node,express and multer for server side development.
+
+
+HTML,CSS,Bootstrap,JS for client side rendering.
+
+
+NOSQL as database.
 
 
 # preview
